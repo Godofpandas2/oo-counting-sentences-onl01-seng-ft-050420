@@ -34,5 +34,6 @@ class String
         sentence += 1
       end
     return sentence
+    end
   end
 end
