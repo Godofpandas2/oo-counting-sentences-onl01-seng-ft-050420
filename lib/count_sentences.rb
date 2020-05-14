@@ -27,13 +27,6 @@ class String
   end
 
   def count_sentences
-    new_array = self.split(//)
-    sentence = 0
-    new_array.each do |i|
-      if i == "." || "?" || "!"
-        sentence += 1
-      end
-    return sentence
-    end
+    new_array = self.split(//).map.count {|i| [".", "?","!"].include? i}
   end
 end
