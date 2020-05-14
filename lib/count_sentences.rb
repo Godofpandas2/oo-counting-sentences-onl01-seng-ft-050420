@@ -27,6 +27,7 @@ class String
   end
 
   def count_sentences
-    new_array = self.split(//).map.count {|i| [".", "?","!"].include? i}
+    new_array = self.split(/[.?!]/)
+    return new_array.count
   end
 end
